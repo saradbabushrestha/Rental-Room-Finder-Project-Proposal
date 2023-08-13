@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{textcomp} % Required for textcomp package
+\usepackage{setspace} % Required for line spacing
+\usepackage[style=ieee]{biblatex} % Use the IEEE citation style
+\usepackage{hyperref} % Required for hyperlinks and \phantomsection
+
+\addbibresource{references.bib} % Load the reference file
+
+\title{Proposal}
+\author{Sarthak Gautam}
+\date{\today}
+
+\begin{document}
+\include{0cover}
+
+\newpage
+\include{1titile}
+\newpage
+% Page numbering for abstract (Roman numerals)
+\pagenumbering{roman}
+\addcontentsline{toc}{section}{ABSTRACT}
+
+\newpage
+\include{2Abstract}
+\newpage\setstretch{1.3}
+\tableofcontents
+\addcontentsline{toc}{section}{TABLE OF CONTENTS}
+
+\newpage
+\listoffigures
+\addcontentsline{toc}{section}{LIST OF FIGURES}
+\newpage
+\include{3Introduction}
+\newpage
+
+
+\newpage
+\include{4Literature}
+
+\newpage
+\include{5feasibility}
+
+\newpage
+\include{6methodology}
+
+\newpage
+\include{7SystemDesign}
+
+
+\newpage
+\addcontentsline{toc}{section}{EXPECTED OUTCOMES}
+\include{8Expected}
+\newpage
+
+\clearpage
+\include{9reference}
+
+\end{document}
